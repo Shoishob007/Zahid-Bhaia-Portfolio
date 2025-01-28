@@ -1,20 +1,24 @@
 import { getId } from '@/lib/utils/helper';
 
 export const skillsSection = {
-  title: 'what i do',
+  title: 'What Do I Offer',
   skills: [
     {
       id: getId(),
       title: 'Offshore marketing and sales',
       // animation lottie file: https://lottiefiles.com/
       lottie: {
-        light: '/lotties/frontend.json',
-        dark: '/lotties/frontend-dark.json',
+        light: '/lotties/services.json',
+        dark: '/lotties/services-dark.json',
       },
       points: [
-        'Building full-stack web applications using Next.js with TypeScript, TailwindCSS, ShadCN, and Prisma',
-        'Developing responsive single-page applications using React.js',
-        'Creating RESTful APIs using Express for backend development',
+        'Managing and nurturing relationships with international clients to ensure long-term partnerships and customer satisfaction.',
+        'Developing and executing strategic sales plans to achieve revenue growth targets and expand market share.',
+        'Negotiating and closing high-value deals with clients, ensuring mutually beneficial terms and conditions.',
+        'Conducting market research and analysis to identify new business opportunities and emerging trends.',
+        'Setting clear sales objectives and key performance indicators (KPIs) to drive team performance and accountability.',
+        'Collaborating with cross-functional teams to align marketing strategies with sales goals and organizational objectives.',
+        'Monitoring and analyzing sales metrics to evaluate performance and optimize strategies for continuous improvement.',
       ],
       softwareSkills: [
         {
@@ -33,27 +37,27 @@ export const skillsSection = {
         { name: 'Business Analysis', icon: 'twemoji:briefcase' },
         { name: 'Business Communications', icon: 'twemoji:e-mail' },
         { name: 'Business Development', icon: 'twemoji:rocket' },
-        { name: 'Microsoft Office', icon: 'vscode-icons:file-type-word' },
+        // { name: 'Microsoft Office', icon: 'vscode-icons:file-type-word' },
         { name: 'Team Management', icon: 'twemoji:busts-in-silhouette' },
       ],
     },
-    {
-      id: getId(),
-      title: 'UI/UX designing',
-      lottie: {
-        light: '/lotties/designing.json',
-        dark: '/lotties/designing-dark.json',
-      },
-      points: [
-        'Experience in designing user-friendly interfaces with figma',
-        'Experience in developing design systems and style guides',
-        'Providing user-friendly design solutions',
-      ],
-      softwareSkills: [
-        { name: 'figma', icon: 'logos:figma' },
-        { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
-        { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
-      ],
-    },
+    // {
+    //   id: getId(),
+    //   title: 'UI/UX designing',
+    //   lottie: {
+    //     light: '/lotties/designing.json',
+    //     dark: '/lotties/designing-dark.json',
+    //   },
+    //   points: [
+    //     'Experience in designing user-friendly interfaces with figma',
+    //     'Experience in developing design systems and style guides',
+    //     'Providing user-friendly design solutions',
+    //   ],
+    //   softwareSkills: [
+    //     { name: 'figma', icon: 'logos:figma' },
+    //     { name: 'adobe illustrator', icon: 'logos:adobe-illustrator' },
+    //     { name: 'adobe photoshop', icon: 'logos:adobe-photoshop' },
+    //   ],
+    // },
   ],
 };

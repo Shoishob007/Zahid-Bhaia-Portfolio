@@ -1,5 +1,5 @@
 export const experienceSection = {
-  title: 'Where I have worked',
+  title: 'Where have I worked',
   experiences: [
     {
       company: 'Fintech Hub Limited',

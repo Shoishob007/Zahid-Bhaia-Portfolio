@@ -9,7 +9,7 @@ const Experience = () => {
   return (
     <motion.section
       id="experience"
-      className="max-w-3xl py-32 mx-auto"
+      className="max-w-3xl py-20 mx-auto"
       {...getSectionAnimation}
     >
       <h2 className="heading-secondary text-center">
