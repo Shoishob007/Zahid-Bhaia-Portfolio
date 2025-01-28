@@ -1,0 +1,60 @@
+export const experienceSection = {
+  title: 'Where I have worked',
+  experiences: [
+    {
+      company: 'Fintech Hub Limited',
+      companyUrl: 'https://fintechhub.com.bd/',
+      role: 'First Assistant Vice President',
+      started: 'July 2024',
+      upto: 'Present',
+      tasks: [
+        'We provide tailored Custom Application Development services to meet unique business needs, from concept to deployment',
+        'Our Team Augmentation solutions help to scale with top-tier IT professionals, ensuring seamless project delivery and innovation',
+        'With a focus on quality and efficiency, we empower businesses to achieve their technology goals',
+      ],
+    },
+    {
+      company: 'LEADS Corporation Limited',
+      companyUrl: 'http://leads.com.bd/',
+      role: 'Deputy Manage, International Sales',
+      started: 'September 2020',
+      upto: 'June 2024',
+      tasks: [
+        "Global Business Development: Spearheading initiatives to expand LEADS Corporation's footprint in offshore markets",
+        'Client Relationship Management: Building and nurturing strong client relationships to understand and address their unique business needs',
+        'Market Research and Analysis: Conducting in-depth market analysis to identify new opportunities and trends',
+        ' Strategic Planning: Developing and implementing strategic sales plans to achieve international growth objectives',
+      ],
+    },
+    {
+      company: 'Jobike',
+      companyUrl: 'https://www.jo.bike',
+      role: 'Business Operations Manager',
+      started: 'June 2020',
+      upto: 'September 2020',
+      tasks: [
+        'Doing major updates in JoBike app & web',
+        'Integrating payment getaway with SSL commerce',
+        'Collaborating with Indian tech team for product development',
+        'API integration with HungryNaki app',
+        'Prepare Promotional plan',
+        'Managing a large team of Supervisors & Riders',
+      ],
+    },
+    {
+      company: 'Sheba.xyz',
+      companyUrl: 'https://www.sheba.xyz/',
+      role: 'SBU Lead, New Business',
+      started: 'February 2016',
+      upto: 'March 2020',
+      tasks: [
+        'Managed day-to-day operations of eCommerce Operations team to ensure excellent customer services',
+        'Managed daily running of call center, sourcing equipment, effective resource management, strategy implementation, solution and operations',
+        'Assisted Head of Department with strategic planning to ensure quality services that complies with changing demand of customers from different segment',
+        'Ensured data compilation of relevant communications',
+        'Monitored random sample calls to improve quality and minimize errors',
+        'Supervised automated CRM tools, Complain Management, Sheba Bondhu APP in collaboration with tech team',
+      ],
+    },
+  ],
+};

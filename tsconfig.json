@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./public/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/containers/About.jsx"
+, "src/app/layout.jsx", "src/app/not-found.jsx", "src/lib/content/portfolio.js", "src/lib/content/projects.js", "src/lib/content/skills.js", "src/lib/content/social.js", "src/lib/content/navbar.js", "src/lib/content/hero.js", "src/lib/content/footer.js", "src/lib/content/featured-projects.js", "src/lib/content/experience.js", "src/lib/content/contact.js", "src/lib/content/about.js", "src/lib/hooks/use-theme.jsx", "src/lib/hooks/use-window-width.jsx", "src/lib/utils/config.js", "src/lib/utils/fonts.js", "src/lib/utils/helper.js", "src/containers/Contact.jsx", "src/containers/Email.jsx", "src/containers/Experience.jsx", "src/containers/FeaturedProjects.jsx", "src/containers/Hero.jsx", "src/containers/index.js", "src/containers/Projects.jsx", "src/containers/Skills.jsx", "src/containers/Social/index.jsx", "src/containers/Social/SocialLinks.jsx", "src/containers/layout/Navbar.jsx", "src/containers/layout/Layout.jsx", "src/containers/layout/Footer.jsx", "src/components/index.js", "src/components/ui/Wrapper.jsx", "src/components/ui/Sidebar.jsx", "src/components/ui/ShowLottie.jsx", "src/components/ui/ProjectCard.jsx", "src/components/ui/FeaturedProject.jsx", "src/components/ui/Cursor.jsx", "src/components/ui/AuthorImage.jsx", "src/components/socials/SocialIcon.jsx", "src/components/socials/SocialLink.jsx", "src/components/skills/Skill.jsx", "src/components/skills/SkillIcon.jsx", "src/components/lists/ListItem.jsx", "src/components/lists/TabList.jsx", "src/components/buttons/Button.jsx", "src/components/buttons/DarkModeButton.jsx", "src/components/buttons/Link.jsx", "src/components/buttons/NavButton.jsx", "src/app/page.jsx"  ],
+  "exclude": ["node_modules"]
+}
