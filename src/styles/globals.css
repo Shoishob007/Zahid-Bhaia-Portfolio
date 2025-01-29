@@ -61,3 +61,7 @@
 .h3 {
   @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
 }
+
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden, .vertical-timeline--animate .vertical-timeline-element-icon.is-hidden{
+  visibility: visible !important;
+}

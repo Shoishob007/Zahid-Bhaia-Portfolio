@@ -33,6 +33,11 @@ module.exports = {
         hostname: 'buttons-animations-kv.vercel.app',
         pathname: '/**',
       },
+      {
+        protocol: 'https', // Correctly specify protocol
+        hostname: 'media.licdn.com', // Use hostname instead of domains
+        pathname: '/**', // Specify the pathname
+      },
     ],
   },
 };

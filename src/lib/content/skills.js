@@ -1,7 +1,7 @@
 import { getId } from '@/lib/utils/helper';
 
 export const skillsSection = {
-  title: 'What Do I Offer',
+  title: 'Skills and Services',
   skills: [
     {
       id: getId(),

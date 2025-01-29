@@ -80,7 +80,7 @@ const Hero = () => {
           animate="show"
           href={cta?.url ?? '#'}
           className={`mt-3 xs:mt-5 md:mt-6 ${
-            cta.hideInDesktop ? 'md:hidden' : ''
+            cta.hideInDesktop ? 'md:show' : ''
           }`}
           sameTab={cta?.sameTab}
         >

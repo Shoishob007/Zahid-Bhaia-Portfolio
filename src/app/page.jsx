@@ -1,3 +1,4 @@
+/* eslint-disable simple-import-sort/imports */
 import {
   About,
   Contact,
@@ -7,6 +8,8 @@ import {
   Layout,
   Projects,
   Skills,
+  Education,
+  Certificates,
 } from '@/containers';
 
 const Home = () => {
@@ -17,8 +20,10 @@ const Home = () => {
         <About />
         <Skills />
         <Experience />
-        <FeaturedProjects />
-        <Projects />
+        <Education />
+        {/* <FeaturedProjects /> */}
+        {/* <Projects /> */}
+        <Certificates/>
         <Contact />
       </Layout>
     </>
