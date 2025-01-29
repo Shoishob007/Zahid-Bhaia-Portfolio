@@ -1,3 +1,4 @@
+/* eslint-disable simple-import-sort/imports */
 'use client';
 
 import { navbarSection } from '@/lib/content/navbar';
@@ -5,13 +6,32 @@ import { author } from '@/lib/content/portfolio';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
 
-import { Button, DarkModeButton, Link as CLink, NavButton } from '@/components';
-
-import { fadeIn, slideIn } from '@/styles/animations';
+import { Button, Link as CLink } from '@/components';
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
+
+const NavButton = dynamic(() => import('@/components/buttons/NavButton'), {
+  ssr: false,
+});
+const DarkModeButton = dynamic(
+  () => import('@/components/buttons/DarkModeButton'),
+  { ssr: false }
+);
+const fadeIn = dynamic(
+  () => import('@/styles/animations').then((mod) => mod.fadeIn),
+  {
+    ssr: false,
+  }
+);
+const slideIn = dynamic(
+  () => import('@/styles/animations').then((mod) => mod.slideIn),
+  {
+    ssr: false,
+  }
+);
 
 const hideNavWhileScrolling = (setNavbarStyle, offset = 100) => {
   if (typeof window === 'undefined') {
