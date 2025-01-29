@@ -12,13 +12,11 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-/**
- * Hides the navbar while scrolling down
- * @param {Object} config
- * @param {String} [config.id=navbar] - id of navbar
- * @param {Number} [config.offset=100] - offset of navbar in px
- */
 const hideNavWhileScrolling = (setNavbarStyle, offset = 100) => {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
   let prevScrollPos = window.pageYOffset;
 
   const handleScroll = () => {
