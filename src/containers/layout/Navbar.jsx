@@ -1,4 +1,5 @@
 'use client';
+
 import { navbarSection } from '@/lib/content/navbar';
 import { author } from '@/lib/content/portfolio';
 import useWindowWidth from '@/lib/hooks/use-window-width';
