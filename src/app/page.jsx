@@ -3,10 +3,8 @@ import {
   About,
   Contact,
   Experience,
-  FeaturedProjects,
   Hero,
   Layout,
-  Projects,
   Skills,
   Education,
   Certificates,
@@ -21,9 +19,9 @@ const Home = () => {
         <Skills />
         <Experience />
         <Education />
-        {/* <FeaturedProjects /> */}
-        {/* <Projects /> */}
-        <Certificates/>
+        {/* <FeaturedProjects />
+        <Projects /> */}
+        <Certificates />
         <Contact />
       </Layout>
     </>
