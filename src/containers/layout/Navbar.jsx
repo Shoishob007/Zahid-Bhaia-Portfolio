@@ -18,57 +18,58 @@ import { useEffect, useState } from 'react';
  * @param {String} [config.id=navbar] - id of navbar
  * @param {Number} [config.offset=100] - offset of navbar in px
  */
-
-const hideNavWhileScrolling = ({
-  id = 'navbar',
-  offset = 100,
-  when = true,
-}) => {
-  const nav = document.getElementById(id);
-  if (!nav) return;
-
+const hideNavWhileScrolling = (setNavbarStyle, offset = 100) => {
   let prevScrollPos = window.pageYOffset;
 
-  window.onscroll = () => {
-    if (when) {
-      const curScrollPos = window.pageYOffset;
-      if (prevScrollPos < curScrollPos) nav.style.top = `-${offset}px`;
-      else nav.style.top = '0';
-      prevScrollPos = curScrollPos;
+  const handleScroll = () => {
+    const curScrollPos = window.pageYOffset;
+    if (prevScrollPos < curScrollPos) {
+      setNavbarStyle({ top: `-${offset}px` });
+    } else {
+      setNavbarStyle({ top: '0' });
     }
+    prevScrollPos = curScrollPos;
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
   };
 };
 
-const NavItem = ({ href, children, onClick, index, delay }) => {
-  return (
-    <motion.li
-      className="group"
-      variants={slideIn({ delay: delay + index / 10, direction: 'down' })}
-      initial="hidden"
-      animate="show"
+const NavItem = ({ href, children, onClick, index, delay }) => (
+  <motion.li
+    className="group"
+    variants={slideIn({ delay: delay + index / 10, direction: 'down' })}
+    initial="hidden"
+    animate="show"
+  >
+    <CLink
+      href={href || `/#${children}`}
+      className="block p-2 duration-500 hover:text-accent"
+      onClick={onClick}
+      withPadding
     >
-      <CLink
-        href={href || `/#${children}`}
-        className="block p-2 duration-500 hover:text-accent"
-        onClick={onClick}
-        withPadding
-      >
-        {children}
-      </CLink>
-    </motion.li>
-  );
-};
+      {children}
+    </CLink>
+  </motion.li>
+);
 
 const Navbar = () => {
   const { cta, navLinks } = navbarSection;
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
+  const [navbarStyle, setNavbarStyle] = useState({ top: '0' });
 
   const windowWidth = useWindowWidth();
   const md = getBreakpointsWidth('md');
   const ANIMATION_DELAY = windowWidth <= md ? 0 : 0.8;
 
   useEffect(() => {
-    hideNavWhileScrolling({ when: !navbarCollapsed });
+    if (!navbarCollapsed) {
+      const cleanupScrollHandler = hideNavWhileScrolling(setNavbarStyle);
+      return cleanupScrollHandler;
+    }
   }, [navbarCollapsed]);
 
   return (
@@ -77,6 +78,7 @@ const Navbar = () => {
       initial="hidden"
       animate="show"
       id="navbar"
+      style={navbarStyle}
       className="fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-5 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
     >
       <h1 className="relative text-2xl capitalize font-signature text-accent group top-1">
@@ -87,9 +89,7 @@ const Navbar = () => {
       </h1>
 
       <NavButton
-        onClick={() => {
-          setNavbarCollapsed((prev) => !prev);
-        }}
+        onClick={() => setNavbarCollapsed((prev) => !prev)}
         navbarCollapsed={navbarCollapsed}
         className="md:invisible"
       />
