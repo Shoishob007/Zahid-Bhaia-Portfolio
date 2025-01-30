@@ -24,7 +24,7 @@ export const metadata = {
     url: seoData.url,
     title: seoData.title,
     description: seoData.description,
-    images: seoData.image,
+    images: seoData.img,
     siteName: seoData.title,
   },
   twitter: {

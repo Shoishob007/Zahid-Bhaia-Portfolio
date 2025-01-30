@@ -22,7 +22,7 @@ export const seoData = {
   title:
     'Zahid Hossain | International Sales and Strategic Partnerships Specialist',
   description:
-    'Zahid Hossain is a International Sales and Strategic Partnerships Specialist who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Zahid Hossain is an International Sales and Strategic Partnerships Specialist with a focus on driving growth through global sales strategies',
   author: author.name,
   img: '/about_zahid_bhaia.png',
   url: 'https://next-techhub.com/',
