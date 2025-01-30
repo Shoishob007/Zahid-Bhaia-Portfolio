@@ -8,6 +8,7 @@ import {
   Skills,
   Education,
   Certificates,
+  Projects,
 } from '@/containers';
 
 const Home = () => {
@@ -19,8 +20,7 @@ const Home = () => {
         <Skills />
         <Experience />
         <Education />
-        {/* <FeaturedProjects />
-        <Projects /> */}
+        <Projects />
         <Certificates />
         <Contact />
       </Layout>

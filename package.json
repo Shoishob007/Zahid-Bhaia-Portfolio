@@ -7,14 +7,12 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && yarn format",
-    "prepare": "husky install"
+    "lint:fix": "eslint src --fix && yarn format"
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.0",
     "clsx": "^2.0.0",
     "framer-motion": "^9.0.3",
-    "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "next": "^13.5.3",
     "react": "^18.2.0",

@@ -10,7 +10,7 @@ const EduTabList = ({ institutions }) => {
   const [activeInstitution, setActiveInstitution] = useState(0);
   const windowWidth = useWindowWidth();
 
-  const { name, degree, major, started, upto, description } =
+  const { degree, major, started, upto, description } =
     institutions[activeInstitution];
 
   const sm = getBreakpointsWidth('sm');

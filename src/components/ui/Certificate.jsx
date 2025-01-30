@@ -3,7 +3,6 @@ import { cn } from '@/lib/utils/helper';
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Certificate = ({
   img,
@@ -77,12 +76,12 @@ const Certificate = ({
               )}
               {issued && (
                 <p className="text-sm text-dark-1 mt-2">
-                  <strong>Issued:</strong> {issued}
+                  <strong>Issued On:</strong> {issued}
                 </p>
               )}
               {issuer && (
                 <p className="text-sm text-dark-1 mt-2">
-                  <strong>Issuer:</strong> {issuer}
+                  <strong>Issued By:</strong> {issuer}
                 </p>
               )}
             </div>

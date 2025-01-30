@@ -15,6 +15,7 @@ export const socialLinks = {
 export const author = {
   name: 'Zahid Hossain',
   email: 'zahid.hossain@fintechhub.com.bd',
+  img: '/about_zahid_bhaia.png',
 };
 
 export const seoData = {
@@ -23,7 +24,7 @@ export const seoData = {
   description:
     'Zahid Hossain is a International Sales and Strategic Partnerships Specialist who specializes in building (and occasionally designing) exceptional visual interfaces.',
   author: author.name,
-  image: 'about_zahid_bhaia.png',
+  img: '/about_zahid_bhaia.png',
   url: 'https://next-techhub.com/',
   keywords: [
     'Zahid ',

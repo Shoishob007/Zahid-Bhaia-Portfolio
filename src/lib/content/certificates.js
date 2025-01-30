@@ -39,7 +39,7 @@ const certificateSection = {
     },
     {
       id: getId(),
-      name: 'COVID-19: Operational Planning Guidelines and COVID-19 Partners Platform to support country preparedness and response',
+      name: 'Operational Planning Guidelines and COVID-19 Partners Platform to support country preparedness and response',
       issuer: "World Health Organization",
       description: "The World Health Organization's mission: to promote health, keep the world safe, and serve the vulnerable. Working through offices in more than 150 countries, WHO staff work side by side with governments and other partners to ensure the highest attainable level of health for all people.",
       issued: 'March, 2020',
